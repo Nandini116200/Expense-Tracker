@@ -26,6 +26,7 @@ else:
     st.sidebar.info("No transactions yet.")
 # ---
 st.markdown("---")
+st.sidebar.markdown("<p style='text-align:center; font-size:12px; color:gray;'>Made by Nandini</p>", unsafe_allow_html=True)
 # ---
 
 # Main content area
@@ -71,7 +72,7 @@ if submitted:
 
 
 
-# Transactions Table with Delete option
+# Transactions Table
 st.subheader("📋 All Transactions")
 if not st.session_state.transactions.empty:
     st.table(st.session_state.transactions)
