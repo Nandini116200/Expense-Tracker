@@ -14,7 +14,7 @@ if "transactions" not in st.session_state:
     )
 
 # Sidebar: Category-wise Summary
-st.sidebar.header("📜 Category Summary")
+st.sidebar.header("📜 Category-Split")
 if not st.session_state.transactions.empty:
     category_summary = st.session_state.transactions.groupby("Category")["Amount"].sum().reset_index()
     st.sidebar.dataframe(
@@ -73,7 +73,7 @@ if submitted:
 
 
 # Transactions Table
-st.subheader("📋 All Transactions")
+st.subheader("📋Transaction Table")
 if not st.session_state.transactions.empty:
     st.table(st.session_state.transactions)
 else:
