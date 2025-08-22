@@ -26,8 +26,8 @@ else:
     st.sidebar.info("No transactions yet.")
 # ---
 st.markdown("---")
-st.sidebar.markdown("<div style='position:fixed; bottom:10px; right:10px; color:gray; font-size:12px;'>Made by Nandini</div>", unsafe_allow_html=True)
-# ---
+st.sidebar.markdown("<p style='text-align:center; font-size:12px; color:gray;'>Made by Nandini</p>", unsafe_allow_html=True)
+
 
 # Main content area
 st.subheader("➕ Add Transaction")
